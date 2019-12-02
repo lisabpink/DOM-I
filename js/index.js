@@ -69,3 +69,35 @@ newNavItem2.style.color = 'green';
 
 newNav.prepend(newNavItem1);
 newNav.appendChild(newNavItem2);
+
+// Add cta, cta-text, and cta-img section
+const ctaHeader = document.querySelector('.cta .cta-text h1');
+const ctaButton = document.querySelector('.cta .cta-text button');
+const ctaImg = document.querySelector('#cta-img');
+
+ctaHeader.innerHTML = siteContent['cta']['h1'].replace(/\s/g, '<br>');
+ctaButton.textContent = siteContent['cta']['button'];
+ctaImg.src = siteContent['cta']['img-src'];
+
+// Add section headers
+const sectionHeader = document.querySelectorAll('.main-content h4');
+
+sectionHeader[0].textContent = siteContent['main-content']['features-h4'];
+sectionHeader[1].textContent = siteContent['main-content']['about-h4'];
+sectionHeader[2].textContent = siteContent['main-content']['services-h4'];
+sectionHeader[3].textContent = siteContent['main-content']['product-h4'];
+sectionHeader[4].textContent = siteContent['main-content']['vision-h4'];
+
+// Add middle banner image
+const middleImage = document.querySelector('#middle-img');
+
+middleImage.src = siteContent['main-content']['middle-img-src'];
+
+// Add section content
+const sectionContent = document.querySelectorAll('.main-content p');
+
+sectionContent[0].textContent = siteContent['main-content']['features-content'];
+sectionContent[1].textContent = siteContent['main-content']['about-content'];
+sectionContent[2].textContent = siteContent['main-content']['services-content'];
+sectionContent[3].textContent = siteContent['main-content']['product-content'];
+sectionContent[4].textContent = siteContent['main-content']['vision-content'];
