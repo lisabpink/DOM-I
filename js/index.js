@@ -54,3 +54,18 @@ nav[3].textContent = siteContent['nav']['nav-item-4'];
 nav[4].textContent = siteContent['nav']['nav-item-5'];
 nav[5].textContent = siteContent['nav']['nav-item-6'];
 
+// Create two new elements
+const newNav = document.querySelector('nav');
+
+const newNavItem1 = document.createElement('a');
+newNavItem1.textContent = 'Home';
+newNavItem1.href = '#';
+newNavItem1.style.color = 'green';
+
+const newNavItem2 = document.createElement('a');
+newNavItem2.textContent = 'Blog';
+newNavItem2.href = '#';
+newNavItem2.style.color = 'green';
+
+newNav.prepend(newNavItem1);
+newNav.appendChild(newNavItem2);
