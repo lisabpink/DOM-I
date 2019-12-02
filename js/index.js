@@ -101,3 +101,21 @@ sectionContent[1].textContent = siteContent['main-content']['about-content'];
 sectionContent[2].textContent = siteContent['main-content']['services-content'];
 sectionContent[3].textContent = siteContent['main-content']['product-content'];
 sectionContent[4].textContent = siteContent['main-content']['vision-content'];
+
+// Add contact header
+const contactHeader = document.querySelector('.contact h4');
+
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+
+// Add contact content
+const contactContent = document.querySelectorAll('.contact p');
+
+contactContent[0].innerHTML = siteContent['contact']['address'];
+contactContent[1].textContent = siteContent['contact']['phone'];
+contactContent[2].textContent = siteContent['contact']['email'];
+
+
+// Add footer copyright
+const footer = document.querySelector('footer p');
+
+footer.textContent = siteContent['footer']['copyright'];
